@@ -1,16 +1,17 @@
-﻿GitHub的官方网站为：[GitHub](https://github.com/)
-## 什么是GitHub
+﻿@[toc]
+GitHub的官方网站为：[GitHub](https://github.com/)
+# 一. 什么是GitHub
 GitHub是用于版本控制和协作的代码托管平台。它可以让您和其他人在任何地方协同工作，其最基本的操作包括：
 （1）创建和使用存储库
 （2）启动并管理新分支
 （3）对文件进行更改，并将其作为提交推送到GitHub
 （4）打开并合并拉取请求
-***
-## 注册账户
+
+# 二. 注册账户
 首先是在官网上注册自己的GitHub账号。
 注册完成后进行简单的设置，开始创建一个属于自己的库。
-***
-## 创建仓库
+
+# 三. 创建仓库
    （注意：由于我们是免费用户，因此只能创建公共仓库）
 
  1. Create a new repository（点击右上角头像旁的"+"，选择"New repository"）
@@ -25,17 +26,19 @@ gitignore: 不需要进行版本管理的仓库类型，对应生成文件.gitig
 license: 证书类型，对应生成文件LICENSE
 
  2. 创建完自己的库之后，需要进行本地配置，方便本地代码同步到GitHub所创建的库中。
- ***
-## 安装Git
+ 
+# 四. 安装Git
 （以Git Windows版为例，进行Git Bash的安装）
  1. 进入[Git下载页面](https://git-scm.com)，下载适合自己电脑的版本
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920103111667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsaHI2Mg==,size_16,color_FFFFFF,t_70)
 下载后的安装包，如下所示：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920102811322.png)
  2. 下载后双击运行，直接安装，在安装过程中直接默认选项即可。
-> 若是Linux用户：sudo apt-get install git
-***
-## 配置Git
+```powershell
+#若是Linux用户：
+sudo apt-get install git
+```
+# 五. 配置Git
  1. 运行Git Bash，打开的Git终端如下图所示
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920104021899.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsaHI2Mg==,size_16,color_FFFFFF,t_70)
 （1）@之前的"rhp62"是你的计算机名
@@ -58,8 +61,6 @@ ssh-keygen -t rsa -C "your_email@youremail.com"
  （4）点击"Add SSH key"，保存即可  
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920114327935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsaHI2Mg==,size_16,color_FFFFFF,t_70)
  
- 
- 
  4. 验证是否绑定成功，在Git Bash下输入下列代码
   ```Bash
 ssh -T git@github.com
@@ -74,11 +75,10 @@ ssh -T git@github.com
 git config --global user.name "your name"
 git config --global user.email "your_email@youremail.com"
 ```
-
  - name是GitHub上的用户名
  - email是注册GitHub时使用的邮箱地址
- ***
-## 检出仓库
+ 
+# 六. 检出仓库
 创建一个本地仓库的克隆版本，执行如下命令
 
 ```Bash
@@ -101,8 +101,7 @@ git clone https:/path/to/repository.git
 git clone后的网址是你创建库成功后的网址
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920171402580.png)
 3. 克隆成功后，会在本地仓库中看到以我的库名所创建的文件夹
-***
-## 推送改动
+# 七. 推送改动
 本地仓库由Git维护的三棵"树"组成
 第一个是你的工作目录，持有实际文件；
 第二个是缓存区（Index），即缓存区域，临时保存你的改动；
