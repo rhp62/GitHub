@@ -34,13 +34,14 @@ license: 证书类型，对应生成文件LICENSE
 下载后的安装包，如下所示：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920102811322.png)
  2. 下载后双击运行，直接安装，在安装过程中直接默认选项即可。
-```powershell
-#若是Linux用户：
+ 3. 若是Linux用户，直接执行如下命令：
+```bash
 sudo apt-get install git
 ```
+
 # 五. 配置Git
- 1. 运行Git Bash，打开的Git终端如下图所示
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920104021899.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsaHI2Mg==,size_16,color_FFFFFF,t_70)
+ 1. 运行Git Bash，打开的Git终端如下图所示：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190920104021899.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsaHI2Mg==,size_16,color_FFFFFF,t_70)
 （1）@之前的"rhp62"是你的计算机名
 （2）@之后的"LAPTOP-VPJSKCPU"是你的计算机型号
 
